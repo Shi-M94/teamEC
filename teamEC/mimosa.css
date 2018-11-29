@@ -1,0 +1,711 @@
+@charset "UTF-8";
+
+
+
+body,html{
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height:100%;
+	min-width: 1000px;
+}
+
+body{
+	text-align:center;
+}
+
+/*=======================================header================================================*/
+#header{
+	top:0;
+	left:0;
+	width: 100%;
+	min-width: 1000px;
+	height:100px;
+	margin: 0 auto;
+	background-color:  #440000;
+}
+
+.header-top{
+	display:flex;
+	height: 40%;
+	width: 100%;
+}
+
+#header h1{
+	font-family: serif;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.header-menu {
+	width : 60%;
+	margin-top : 5px;
+}
+
+.header-menu ul {
+	display: flex;
+	margin-top : 0px;
+	list-style: none;
+	width : 60%;
+}
+
+.header-menu ul li {
+	text-align: center;
+	width: 230px;
+	padding-right:5px;
+	font-size:30px;
+}
+
+.header-menu ul li .button{
+	border-style: none;
+    background: #440000;
+    color: white;
+    font-size: 16px;
+}
+
+.header-title {
+	margin-right:10%;
+	margin-left:15%;
+	font-family:'Vidaloka',serif;
+	color:white;
+	font-size:17px;
+}
+
+.header-bottom{
+	width:100%;
+}
+
+.header-bottom ul{
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+.header-bottom .category{
+    background: #F2F2F2;
+    height: 36px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header-bottom  ul .keywords{
+    width: 100%;
+}
+
+.header-bottom ul .key-text{
+    width: 100%;
+    height: 30px;
+}
+
+.header-bottom ul .search_btn{
+    background: #FFC107;
+    height: 36px;
+    width: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.fa-search:before {
+    content: "\f002";
+}
+
+
+/*======================================contents================================================*/
+#contents{
+	margin : 0 auto;
+	width : 1000px;
+	margin-bottom :50px;
+	overflow :auto;
+	text-align:center;
+}
+
+.txt-keywords {
+	width : 95%;
+	height : 20px;
+	padding-left : 5%;
+	box-shadow: 0 0 7px #3498db;
+	border: 1px solid #3498db;
+	border-radius: 100px;
+}
+
+.txt-keywords:focus {
+	border: 1px solid #ff9900;
+	color : #011892;
+	outline: 0;
+}
+
+
+.success,.info{
+	font-size:20px;
+	margin: 10px 0px;
+	padding: 15px 10px 15px 50px;
+	background-repeat: no-rpeat;
+	background-position: 10px center;
+}
+
+.success{
+	forn-size: 0.8em;
+	margin-left: 3%;
+	width: 84%;
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+
+/*========================================================ボタン==============================================*/
+.submit_btn_box{
+	display: block;
+	text-align: center;
+	margin:0 auto;
+}
+
+.submit_btn{
+	width:115px;
+	height: 30px;
+	border-radius: 20px;
+	font-size:10px;
+	margin-left: 10px;
+	text-align:center;
+	color:#fff;
+	background: #000000;
+}
+
+.submit_btn:hover{
+	color:#fff;
+	cursor: pointer;
+	opacity: 0.8;
+	background:#000000;
+}
+
+.submit_btn:active{
+	outline: none;
+}
+
+//消去系
+.submit_kyoukyo{
+	display: block;
+	margin:0 auto;
+}
+
+.submit_kyoukyo{
+    width: 200px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    background: blue;
+}
+
+
+//決定系
+.submit_kanryou{
+	display: block;
+	margin:0 auto;
+}
+
+.submit_kanryou {
+    text-decoration: none;
+    width: 200px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    background: #000000;
+}
+
+/*=======================================form入力部分================================================*/
+.main-form{
+	width:70%;
+	font-size: 20px;
+	text-align:center;
+	margin:0 auto;
+	margin-bottom:40px;
+	border: 3px solid black;
+	border-radius:10px;
+	clear:left;
+}
+.txt{
+	width:80%;
+	border-radius:10px;
+	height: 22px;
+	margin-bottom: 10px;
+}
+.checker{
+	margin-bottom:15px;
+}
+.log_label{
+	float: left;
+    margin-left: 70px;
+}
+.log_label_pass{
+    float: left;
+    margin-left: 70px;
+}
+
+.reset {
+    font-size: 15px;
+    float: right;
+    padding-right: 70px;
+}
+.usersex{
+	float: left;
+    margin-left:80px;
+}
+.userLog{
+	float: left;
+    margin-left: 80px;
+}
+.userLogsex{
+	float: left;
+    margin-left: 80px;
+}
+.hissu {
+    font-size: 14px;
+    font-weight: ;
+    font-weight: bolder;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-left: 5px;
+}
+/*=====================================confirm================================================*/
+.confirm_form{
+	width:60%;
+	margin:0 auto;
+	border: 3px solid black;
+	border-radius:20px;
+	padding:20px;
+	margin-bottom:70px;
+}
+.list-table{
+	border-collapse:separate;
+	border-spacing: 0px 10px;
+}
+.list-table th{
+	border-right:1px dashed black;
+	padding-right:50px;
+	padding-left:50px;
+}
+.list-table td{
+	padding-left:50px;
+	text-align:left;
+}
+.touroku{
+	text-decoration: none;
+    width: 200px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: #fff;
+    background: #000000;
+	margin:0 auto;
+}
+
+/*=======================================table(horizontal)================================================*/
+.horizontal-list-table {
+    width: 700px;
+    padding-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 300px;
+    padding-bottom: 30px;
+    border-bottom: 4px solid black;
+}
+
+.horizontal-list-table-left{
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+
+.horizontal-list-table-right{
+    margin-top: 50px;
+    margin-left: 50px;
+   font-size: 20px;
+}
+/*=============================================Footer=======================================================*/
+#footer {
+	width:100%;
+	height:60px;
+	text-align:center;
+	font-size:24px;
+	line-height:60px;
+	color:white;
+	position:fixed;
+	bottom:0;
+	margin-top:60px;
+	background-color: #440000;
+}
+
+/*=================================================ERROR==================================================*/
+.error{
+	font-size:
+}
+.error-message{
+	color:#FF0000;
+}
+
+#login{
+	border-collapse : separate;
+}
+
+
+/*=================productList.jsp=================*/
+
+#product-table{
+	float:clear;
+}
+
+#products {
+    width: 85%;
+    min-width: 760px;
+    max-width: 1100px;
+    display: inline-block;
+    margin-bottom:50px;
+}
+
+#product-list {
+    width: 28%;
+    float: left;
+    display: inline-block;
+    margin: 10px;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-radius: 10px;
+}
+
+#product-list ul li {
+    display: block;
+    float: left;
+    width: 85%;
+    height: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+#product-list ul li img {
+    width: 95%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+
+/*=================productDetails.jsp=================*/
+
+.details-contents {
+    width: 100%;
+    display: inline-block;
+    max-width: 1000px;
+}
+
+.left {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.details-contents .left img {
+    width: 300px;
+    height: 300px;
+    margin-top: 45px;
+}
+
+.addCart_btn{
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.right {
+    float: left;
+    width: 65%;
+    text-align: center;
+}
+
+.details-table th{
+    background-color: #B4B1B1;
+    width: 250px;
+}
+
+.details-table td{
+    background-color: #E4E1E1;
+    width: 350px;
+    line-height: 40px;
+}
+
+.product-details-recommend-box {
+    width: 100%;
+    display:inline-block;
+    max-width:1000px;
+}
+
+.product-details-recommend-box {
+    width: 1000px;
+    height: 250px;
+    clear: both;
+    margin: 0 auto;
+}
+
+.product-details-recommend-box p{
+    text-align: center;
+}
+
+.product-details-recommend-box ul li {
+    float: left;
+    width: 24%;
+    display: inline-block;
+    margin: 0px 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    list-style: none;
+    font-size: calc(60% + 0.5vw);
+}
+
+.recommends {
+    width: 75%;
+    display: inline-block;
+    margin-left:90px;
+}
+
+.details-table{
+    margin-bottom: 20px;
+    border-spacing: 0 5px;
+    margin-left: 10%;
+}
+
+.recommend-image-box {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+/*=================cart.jsp=================*/
+
+.message{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.error-message{
+	text-align: center;
+	margin-bottom:10px;
+	color: red;
+}
+
+.cart-contents {
+    width: 700px;
+    padding-top: 30px;
+    margin: 0 auto;
+    height: 300px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.cart-left{
+	position: relative;
+	float: left;
+}
+
+.cart-left .checkbox{
+	position: absolute;
+	top: 50%;
+	right: 105%;
+	transform: translateY(-50%);
+}
+
+.cart-left {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+
+.cart-right{
+	margin-top: 20px;
+	margin-left: 50px;
+	float: left;
+}
+
+.product-name-kana {
+    color: blue;
+    padding-left: 65px;
+}
+
+.product-name{
+	color: blue;
+	font-size: larger;
+}
+
+.cart-right .price{
+	margin-top: 15px;
+	color: red;
+	font-size: larger;
+}
+
+.company{
+	margin-top: 15px;
+}
+
+.subtotal {
+    margin-top: 35px;
+    font-size: x-large;
+}
+
+.cart-total-price{
+    text-align: center;
+    color: red;
+}
+
+/*===================================complete=====================================*/
+.kamaboko{
+	text-align:center;
+	border: solid 3px;
+	border-radius: 40px 10px 40px 10px;
+	height: 130px;
+	margin: 50px;
+	padding: 35px;
+}
+
+.errorkamaboko{
+	text-align:center;
+	background-color:#DDDDDD;
+	border-radius: 40px 10px 40px 10px;
+	height: 130px;
+	position: relative;
+	top: 50px;
+	margin: 50px;
+	padding: 35px;
+}
+/*=======================Responsive===================*/
+@media screen and (max-width: 962px){
+	#header{
+	width:962px;
+	}
+}
+
+/*=======================resetPassword.jsp===================*/
+
+#repass-wrapper{
+	border: 2px solid black;
+	border-radius: 10px;
+    width: 70%;
+    margin: 50px auto;
+}
+
+#repass-title{
+	text-align:center;
+	margin: 50px 0 ;
+	font-size: 20px;
+}
+
+#resetbtn{
+	margin-bottom:30px;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+#repass-form-wrapper{
+	margin-top: 50px;
+}
+
+#repass-form{
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-spacing: 0 10px;
+}
+
+#repass-form tr th{
+	background-color: #B4B1B1;
+	width: 300px;
+}
+
+#repass-form tr td{
+	background-color: #E4E1E1;
+	width: 300px;
+	line-height: 40px;
+}
+
+/*=======================myPage.jsp===================*/
+#mypage-wrapper{
+	text-aline:center;
+}
+
+#mypage-title-box{
+	width;70%;
+	margin: 0 auto;
+}
+
+#mypage-title{
+	margin-top: 50px;
+	font-size: 20px;
+	margin-right: 475px;
+}
+
+#mypage-table-wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#mypage-form{
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-spacing: 0 10px;
+}
+
+#mypage-btn{
+	margin-bottom:30px;
+}
+
+#mypage-form tr th{
+	background-color: #B4B1B1;
+	width: 300px;
+}
+
+#mypage-form tr td{
+	background-color: #E4E1E1;
+	width: 300px;
+	line-height: 40px;
+}
+/*=================settlementConfirm.jsp=================*/
+.address{
+    width: 60%;
+    display: inline-block;
+	margin-bottom:15px;
+}
+
+.address-select{
+    text-align: left;
+    margin: 10px;
+}
+
+.address table{
+    width: 100%;
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px 0 10px 10px;
+}
+
+.address table th{
+    border-style: none;
+    width: 25%;
+}
+
+.address table td{
+    width: 40%;
+    border-style: none;
+}
