@@ -23,6 +23,7 @@ public class ProductListAction extends ActionSupport implements SessionAware{
 
 	public String execute(){
 		session.remove("cartflag");
+		session.remove("keywordsErrorMessageList");
 		List<ProductInfoDTO> productInfoDtoList=new ArrayList<ProductInfoDTO>();
 
 		String result=ERROR;
